@@ -70,7 +70,7 @@ const DOM = {
 
     addTransaction(transaction, index) {
         const tr = document.createElement('tr')
-        tr.innerHTML = DOM.innerHTMLTransaction(transaction)
+        tr.innerHTML = DOM.innerHTMLTransaction(transaction, index)
         tr.dataset.index = index
 
         DOM.transactionsContainer.appendChild(tr)
@@ -86,7 +86,7 @@ const DOM = {
             <td class="description">${transaction.description}</td>
             <td class="${CSSclass}">${amount}</td>
             <td class="date">${transaction.date}</td>
-            <td><img onclick="Transaction.remove(${index})" src="./assets/svg/minus.svg" alt="Remover Transação"></td>
+            <td onclick="Transaction.remove(${index})"><span class="mdi mdi-close delete-btn"></span></td>
         `
 
         return html
