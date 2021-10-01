@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ThiagoPffer/codigo-final-maratona-discover#readme",
   "dependencies": {
-    "@mdi/font": "^5.9.55"
+    "@mdi/font": "^5.9.55",
+    "firebase": "^9.1.1"
   }
 }
